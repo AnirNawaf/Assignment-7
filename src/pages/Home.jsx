@@ -10,11 +10,9 @@ export default function Home() {
             Friends to keep close in your life
           </h1>
 
-          <p className="text-gray-500 mt-3">
-            Your personal shelf of meaningful connections. Browse, tend, and nurture relationships.
-          </p>
+          <p className="text-gray-500 mt-3"> Your personal shelf of meaningful connections. Browse, tend, and nurture relationships.</p>
 
-          <button className="mt-6 bg-green-800 text-white px-5 py-2 rounded-md hover:bg-green-900">
+          <button className="mt-6 cursor-pointer bg-green-800 text-white px-5 py-2 rounded-md hover:bg-green-900">
             + Add a Friend
           </button>
         </div>
@@ -26,7 +24,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white shadow-sm rounded-xl p-5 text-center">
-            <h2 className="text-2xl font-bold">3</h2>
+            <h2 className="text-2xl font-bold">4</h2>
             <p className="text-gray-500">On Track</p>
           </div>
 
@@ -66,25 +64,24 @@ export default function Home() {
 
         <div className="flex justify-center gap-1.5 mt-3 flex-wrap">
           {friend.tags.map((tag, i) => (
-            <span
-              key={i}
-              className="text-[10px] px-2 py-[3px] rounded-full bg-green-100 text-green-700 uppercase tracking-wide"
-            >
+            <span key={i} className="text-[10px] px-2 py-[3px] rounded-full bg-green-100 text-green-700 uppercase tracking-wide" >
               {tag}
             </span>
           ))}
         </div>
 
         <div className="mt-3">
-          <span
-            className={`inline-block text-[10px] px-2.5 py-1 rounded-full text-white ${
+          <span className={
+            `
+            inline-block text-[10px] px-2.5 py-1 rounded-full text-white ${
               friend.status === "overdue"
                 ? "bg-red-400"
                 : friend.status === "almost due"
                 ? "bg-amber-400"
                 : "bg-emerald-500"
-            }`}
-          >
+            }
+            `
+          }>
             {friend.status === "overdue"
               ? "Overdue"
               : friend.status === "almost due"

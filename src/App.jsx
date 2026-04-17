@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import FriendDetails from "./pages/FriendDetails";
 import NotFound from "./pages/NotFound";
+import Timeline from "./pages/Timeline";
 
 
 import Footer from "./components/Footer";
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/friend/:id" element={<FriendDetails />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/timeline" element={<Timeline />} />
         
       </Routes>
 
