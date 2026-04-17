@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <>
-     {!hideLayout && <Navbar />}
+      {!hideLayout && <Navbar />}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,12 +27,20 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/stats" element={<Stats />} />
-        
+
       </Routes>
 
       {!hideLayout && <Footer />}
 
-      <ToastContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={400}
+        newestOnTop
+        pauseOnHover={false}
+        pauseOnFocusLoss={false}
+        closeOnClick
+        theme="colored"
+      />
 
     </>
   );
