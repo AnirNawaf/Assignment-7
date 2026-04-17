@@ -5,10 +5,10 @@ KeenKeeper is a friendship management web application. It allows us to track our
 # tech :
 
 Technologies Used
-1. React.jsয
+1. React.js
 2. React Router DOM
 3. Tailwind CSS
-4. JSON
+4. JSON data
 
 #features:
 1. Friend Management
