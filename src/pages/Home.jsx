@@ -19,7 +19,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
           <div className="bg-white shadow-sm rounded-xl p-5 text-center">
-            <h2 className="text-2xl font-bold">10</h2>
+            <h2 className="text-2xl font-bold">12</h2>
             <p className="text-gray-500">Total Friends</p>
           </div>
 
